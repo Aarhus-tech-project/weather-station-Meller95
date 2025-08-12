@@ -1,0 +1,16 @@
+# Node/Frontend
+node_modules/
+dist/
+.env
+.env.*
+
+# .NET backend
+bin/
+obj/
+.vs/
+*.user
+
+# C++ subscriber
+subscriber-cpp/mqtt_subscriber
+*.o
+*.log
