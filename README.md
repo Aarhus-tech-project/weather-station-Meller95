@@ -3,8 +3,6 @@
 Oversigt:
 Dette projekt er en prototype af en vejrstation, der indsamler målinger af temperatur, luftfugtighed og tryk, gemmer dem i en database og gør dem tilgængelige via API, webgrænseflade og grafana dashboard.
 
-Systemet er bygget som et distribueret setup med både hardware- og softwarekomponenter, der kommunikerer via MQTT.
-
 ---
 
  Arkitektur
@@ -61,7 +59,7 @@ Dataflow:
  Tekniske detaljer
 - Hardware: Arduino UNO R4 WiFi, BME280-sensor.
 - Protokoller: I2C (sensor), MQTT (dataoverførsel).
-- Backend: C++(Mqtt-subscriber), .NET 8 Web API, MySQL.
+- Backend: C++(Mqtt-subscriber), .NET 8 Web API med Entity Framework Core, MySQL.
 - Frontend: React med Vite.
 - Visualisering: Grafana.
 - Broker: Mosquitto MQTT.
